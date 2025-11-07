@@ -1,0 +1,187 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'FonteMedium';
+    src: url(../font/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: 'FonteMenu';
+    src: url(../font/Poppins-Light.ttf);
+}
+/*Formatação de cabeçalho */
+
+header#cabecalho{
+    position: fixed; /* Fixa o cabeçalho no topo */
+    background-color: #2e2d2d; /* Cor do fundo */
+    border-bottom: 1px red solid; /* Cria uma borda 1 px, na cor vermelha de forma sólida embaixo do cabeçalho */
+    height: 85px; /* Define a altura do cabeçalho */
+    width: 100%; /* Define a largura do cabeçalho */
+    display: flex; /* Utiliza o Flexbox para alinhar os itens no centro. */
+    top: 0; /* posicionamento da direita */
+    left: 0; /* posicionamento da esquerda */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura e altura do elemento. */
+}
+
+header#cabecalho img#logoprincipal{
+    position: relative; /* Define que o img só pode se mover dentro do header */
+    left: 80px; /* Posicionamento a esquerda */
+}
+
+header#cabecalho h1{
+    font-family: 'FonteMedium';
+    font-size: 20px;
+    position: fixed; /* Define que o h1 só pode se mover dentro do header */
+    width: 100%; /* Largura de 100% */
+    top: 62px; /* Espaçamento do topo */
+    color: white; /* Define cor */
+    background-color: red; /* Cor do fundo */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+}
+
+/* Formatação do Menu Principal */
+
+nav#menu {
+    display: block; /* Permite que o menu flutue pelo site, sendo exibido como um bloco*/
+}
+
+nav#menu ul{
+    list-style: none; /* Remove os marcadores das listas */
+    position: absolute; /* Permite que o menu flutue pelo site */
+    top: 15px; /* posição */
+    left: 160px; /* posição */
+}
+
+nav#menu li{
+    display: inline; /* Faz com que os itens sejam exibidos na mesma linha*/
+    margin: 80px; /* Define a quantidade de espaçamento fora do bloco dos itens */
+}
+
+nav#menu a{
+    font-family: 'FonteMenu';
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size:15px; /* Define tamanho da fonte */
+    color: white; /* Define cor */
+    transition: color 0.5s ease, font-weight 0.5s ease; /* Define os tempos de transição do color e do font-weight como também a forma que esse tempo passará "ease" */
+
+}
+
+#linkwhats {
+    border-radius: 40px;   /* Cantos arredondados */
+    border: 2px solid white; /* Largura, estilo e cor da borda */
+    padding: 15px;         /* Espaçamento interno opcional */
+    text-align: center;    /* Centralizar o texto */
+}
+
+nav#menu a:hover { /* faz com que quando o mouse passar "hover" ele faça algo */
+    color: red; /* Modifica a cor do texto */
+    font-family: 'FonteMedium'; /* Deixa o texto em negrito */
+}
+
+/* Formatação do body */
+
+body {
+    background: url("../img/backgroundbody/pessoa1.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'FonteMenu';
+}
+
+/*Formatação do rodapé */
+
+
+#rodape {
+    position: relative;
+    background-color: #f1f1f1;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid black;
+}
+
+#novidades{
+    position: relative;
+    display:flexbox;
+    top: 20px;
+    text-align: center;
+}
+
+#novidades h1{
+    font-family: 'FonteMedium';
+    
+}
+
+#novidades input#novidadesbotao{
+    position: relative;
+    display:list-item;
+    margin-left: 695px;
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+    padding: 15px;
+    border: 1px solid red;
+    border-radius: 20px;
+    font-family: 'FonteMedium';
+    font-size: medium;
+    padding: 5px 50px 5px 50px;
+}
+
+.emailenome{
+    border: 1px solid black;
+    font-family: 'FonteMenu';
+    margin: -2px;
+    padding: 10px 100px 8px 8px;
+}
+
+#atalhosrodape ul{
+    list-style: none; /* Remove os marcadores das listas */
+}
+
+#atalhosrodape ul li a{
+    color: black;
+}
+
+.atalhos1{
+    position: relative;
+    left: 400px;
+    top:-70px;
+}
+
+.icons{
+    position:relative;
+    left: 800px;
+    top:-170px;
+}
+
+figure#formasdepagamento{
+    position:relative;
+    left: 1110px;
+    top:-255px;
+}
+
+figure#formasdepagamento figcaption{
+    font-family: 'FonteMedium';
+    padding-bottom: 15px;
+}
+
+p#copyright{
+    position: relative;
+    left: 900px;
+    top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
